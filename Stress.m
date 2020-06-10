@@ -1,8 +1,15 @@
-function K = Stress(k_i, eta_i, T)
+function K = Stress(mount)
+    % Function takes in a mount struct.
+    % RETURNS: Its computed stress tensor, K, in global coordinates.
+
     K = eye(3);
+
     for i = 1:3
-        K(i,i) = K(i,i) * k_i(i)*(1+eta_i(i)*1i);
+
+        % Each diagonal entry of the local coordinate stress tensor is generated.
+        K(i,i) = K(i,i) * mount.k(i)*(1 + mount.eta(i)*1i); 
     end
     
-    K = T'*K*T;
+    % Local coordinate stress tensor is transformed into global coordinates.
+    K = (mount.transform)'* K *(mount.transform);
 end
