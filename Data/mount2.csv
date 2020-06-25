@@ -1,4 +1,4 @@
 Parameters,Stiffness (k),Damping (eta),Direction Cosine with global x,Direction Cosine with global y,Direction Cosine with global z,Global Position coordinates
-Local x,1.00E+05,1.00E-01,1.00E+00,0.00E+00,0.00E+00,3.00E-01
-Local y,1.00E+05,1.00E-01,0.00E+00,1.00E+00,0.00E+00,-1.00E-01
-Local z,1.00E+05,1.00E-01,0.00E+00,0.00E+00,1.00E+00,5.00E-02
+Local x,100000.0,1.00E-01,1.00E+00,0.00E+00,0.00E+00,0.2884383070250914
+Local y,100000.0,1.00E-01,0.00E+00,1.00E+00,0.00E+00,-0.02829098049208642
+Local z,100000.0,1.00E-01,0.00E+00,0.00E+00,1.00E+00,0.08461006411850742
